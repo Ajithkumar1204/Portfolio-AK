@@ -251,4 +251,34 @@ footer {
   nav ul.active {
     display: flex;
   }
+
+  .menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: var(--glass-dark);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+}
 }
