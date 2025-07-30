@@ -92,8 +92,10 @@ nav a:hover {
 
 .menu-toggle {
   display: none;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   cursor: pointer;
+  color: #1e3a8a;
+  z-index: 1001;
 }
 
 /* ===== Responsive Menu ===== */
@@ -105,14 +107,16 @@ nav a:hover {
   nav ul {
     display: none;
     flex-direction: column;
-    background: var(--glass-dark);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
     position: absolute;
     top: 60px;
     right: 20px;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0 6px 20px var(--shadow-color);
     align-items: flex-end;
+    min-width: 160px;
   }
 
   nav ul.active {
