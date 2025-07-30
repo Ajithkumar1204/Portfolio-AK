@@ -70,6 +70,10 @@ header {
   color: #1e3a8a;
 }
 
+nav {
+  margin-left: auto;
+}
+
 nav ul {
   display: flex;
   gap: 1.2rem;
@@ -202,6 +206,10 @@ footer {
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
+  }
+
+  nav {
+    margin-left: 0;
   }
 
   nav ul {
