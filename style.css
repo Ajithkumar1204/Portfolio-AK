@@ -227,4 +227,25 @@ footer {
   nav ul.active {
     display: flex;
   }
+
+  /* ===== Contact Icons Style ===== */
+.contact-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-link img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+.icon-link:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+}
 }
