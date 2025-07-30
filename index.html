@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajithkumar | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script defer src="menu.js"></script>
+  <script defer src="typing.js"></script>
 </head>
 <body>
-
   <!-- Header -->
   <header>
-    <h1>Ajithkumar</h1>
+    <div class="logo">Ajithkumar</div>
     <div class="menu-toggle">☰</div>
     <nav>
       <ul>
@@ -25,103 +25,93 @@
     </nav>
   </header>
 
-  <!-- Home -->
-  <section id="home">
-    <div class="card">
-      <h2>Welcome!</h2>
-      <p>Hi, I'm <strong>Ajithkumar</strong>, a Full Stack Developer passionate about building efficient and user-friendly web applications.</p>
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="glass home-card">
+      <h1 class="name">Hi, I'm <strong>Ajithkumar</strong></h1>
+      <h2 class="role">I'm a <span class="typing"></span></h2>
+      <p>As a full stack developer, I build clean, scalable, and interactive web applications using both modern front-end and back-end technologies.</p>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about">
-    <div class="card">
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="glass about-card slide-in">
       <h2>About Me</h2>
-      <p>BSc Computer Science graduate from Bharathidasan University (CGPA: 8.7). I specialize in Java backend and modern frontend technologies. I love creating practical solutions and constantly improving my skill set.</p>
+      <p>I am a BSc Computer Science graduate from Bharathidasan University (CGPA: 8.7), passionate about software development and creating web solutions that solve real-world problems. I enjoy continuous learning and hands-on projects that challenge me.</p>
+      <p><strong>Education:</strong> BSc Computer Science, Bharathidasan University</p>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section id="skills">
+  <!-- Skills Section -->
+  <section id="skills" class="section">
     <h2>Skills</h2>
     <div class="grid">
-      <div class="skill-card">
-        <h3>Java</h3>
-        <p>Advanced</p>
-        <p>Built robust REST APIs and backend services using Spring Boot.</p>
-      </div>
-      <div class="skill-card">
-        <h3>HTML/CSS/JavaScript</h3>
-        <p>Intermediate</p>
-        <p>Created responsive landing pages and interactive frontends.</p>
-      </div>
-      <div class="skill-card">
-        <h3>React.js</h3>
-        <p>Intermediate</p>
-        <p>Developed dynamic UIs with reusable components.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Node.js</h3>
-        <p>Intermediate</p>
-        <p>Built backend APIs and logic for full-stack apps.</p>
-      </div>
-      <div class="skill-card">
-        <h3>MySQL</h3>
-        <p>Intermediate</p>
-        <p>Structured databases and optimized queries.</p>
-      </div>
-      <div class="skill-card">
-        <h3>Tools</h3>
-        <p>Git, GitHub, VS Code</p>
-        <p>Managed source code and development environments.</p>
-      </div>
+      <div class="skill-card"><h3>HTML</h3><p>Markup language used to structure web pages.</p></div>
+      <div class="skill-card"><h3>CSS</h3><p>Used for styling and responsive design.</p></div>
+      <div class="skill-card"><h3>JavaScript</h3><p>Client-side scripting for dynamic interactions.</p></div>
+      <div class="skill-card"><h3>React.js</h3><p>Library for building reusable UI components.</p></div>
+      <div class="skill-card"><h3>Java</h3><p>Backend logic and APIs with Spring Boot.</p></div>
+      <div class="skill-card"><h3>Spring Boot</h3><p>Framework for building scalable RESTful services.</p></div>
+      <div class="skill-card"><h3>Node.js</h3><p>JavaScript runtime for building backend APIs.</p></div>
+      <div class="skill-card"><h3>MySQL</h3><p>Relational database for structured data storage.</p></div>
+      <div class="skill-card"><h3>GitHub & VS Code</h3><p>Version control and development environment tools.</p></div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
+  <!-- Projects Section -->
+  <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="grid">
       <div class="project-card">
         <h3>Online Book Review System</h3>
-        <p>Users can review and rate books with authentication and admin features.</p>
+        <p>A platform to review and rate books, includes authentication and admin management.</p>
         <p><strong>Tech:</strong> Spring Boot, MySQL, HTML/CSS/JS</p>
-        <a href="#" class="btn">🔗 View Project</a>
+        <a href="#" class="btn">View Project</a>
       </div>
-
       <div class="project-card">
         <h3>Student Task Management</h3>
-        <p>Students can manage tasks and deadlines with automated reminders.</p>
-        <p><strong>Tech:</strong> Spring Boot, MySQL, REST API</p>
-        <a href="#" class="btn">🔗 View Project</a>
+        <p>Web-based system to manage academic tasks and deadlines efficiently with notifications.</p>
+        <p><strong>Tech:</strong> Spring Boot, MySQL, REST APIs</p>
+        <a href="#" class="btn">View Project</a>
       </div>
     </div>
   </section>
 
-  <!-- Resume -->
-  <section id="resume">
-    <div class="card">
-      <h2>My Resume</h2>
-      <p>Click below to download my resume (PDF).</p>
+  <!-- Resume Section -->
+  <section id="resume" class="section">
+    <div class="glass resume-card">
+      <h2>Download My Resume</h2>
+      <p>Click below to download my professional resume in PDF format.</p>
       <a href="Ajithkumar_Resume.pdf" download class="btn">⬇ Download Resume</a>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="card">
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="glass contact-card">
       <h2>Contact Me</h2>
-      <p><strong>Email:</strong> <a href="mailto:ajithkumar12204@gmail.com">ajithkumar12204@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+919361668265">+91 9361668265</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/Ajithkumar12" target="_blank">Ajithkumar12</a></p>
-      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ajith-kumarma" target="_blank">ajith-kumarma</a></p>
-      <p><strong>Portfolio:</strong> <a href="https://ajithkumarm-portfolio.com" target="_blank">ajithkumarm-portfolio.com</a></p>
+      <p>I'm open to collaboration, internships, and exciting opportunities. Feel free to reach out using the form below.</p>
+      <form action="#" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input type="email" name="email" placeholder="Your Email Address" required />
+        <input type="text" name="subject" placeholder="Subject" />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:ajithkumar12204@gmail.com">Send mail For ME</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919361668265"> Call To Connect</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Ajithkumar12" target="_blank"> See My GitHub</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ajith-kumarma" target="_blank">See My LinkedIn</a></p>
+<!--         <p><strong>Portfolio:</strong> <a href="https://ajithkumarm-portfolio.com" target="_blank">ajithkumarm-portfolio.com</a></p> -->
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Ajithkumar. All rights reserved.</p>
+    <p>&copy; 2025 Ajithkumar. Built with passion and code.</p>
   </footer>
 
 </body>
