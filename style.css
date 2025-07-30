@@ -54,6 +54,7 @@ h1, h2, h3 {
 header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   background: var(--glass-light);
   backdrop-filter: blur(var(--glass-blur));
@@ -71,7 +72,9 @@ header {
 }
 
 nav {
-  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 nav ul {
@@ -97,6 +100,7 @@ nav a:hover {
   display: none;
   font-size: 1.6rem;
   cursor: pointer;
+  margin-left: 1rem;
 }
 
 /* ===== Cards & Grid ===== */
@@ -153,7 +157,7 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
-/* ===== Contact Form ===== */
+/* ===== Contact Form & Icons ===== */
 .contact-form {
   margin-top: 2rem;
   display: flex;
@@ -180,6 +184,26 @@ nav a:hover {
 .contact-info {
   margin-top: 2rem;
   text-align: left;
+}
+
+.contact-icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon-link img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+}
+
+.icon-link:hover img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
 }
 
 /* ===== Footer ===== */
@@ -209,43 +233,22 @@ footer {
   }
 
   nav {
-    margin-left: 0;
+    position: absolute;
+    right: 20px;
+    top: 60px;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
     background: var(--glass-dark);
-    position: absolute;
-    top: 60px;
-    right: 20px;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 6px 20px var(--shadow-color);
+    align-items: flex-end;
   }
 
   nav ul.active {
     display: flex;
   }
-
-  /* ===== Contact Icons Style ===== */
-.contact-icons {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1.2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.icon-link img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
-}
-
-.icon-link:hover img {
-  transform: scale(1.2);
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
-}
 }
