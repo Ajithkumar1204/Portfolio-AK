@@ -72,11 +72,10 @@ header {
 }
 
 nav {
-  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  flex: 1;
+  position: relative;
+  width: 100%;
 }
 
 nav ul {
@@ -104,34 +103,41 @@ nav a:hover {
   font-size: 1.8rem;
   cursor: pointer;
   color: #1e3a8a;
-  position: fixed;
-  top: 1.2rem;
-  right:1.5rem;
-  z-index: 2000;
-  
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1001;
 }
 
 /* ===== Responsive Compact Dropdown Navigation ===== */
 @media (max-width: 768px) {
+  nav {
+    position: relative;
+    width: 100%;
+  }
+
   .menu-toggle {
     display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
   }
 
   nav ul {
     display: none;
     flex-direction: column;
-    position: absolute;
-/*     justify-content: center; */
-/*     align-items: flex-start; */
+    align-items: flex-start;
     position: absolute;
     top: 60px;
-    right: 1rem;
-    width: 220px;
+    right: 10px;
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(14px);
     border-radius: 12px;
     padding: 1.2rem;
+    width: 220px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
   }
 
   nav ul.active {
