@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navList = document.getElementById('nav-links');
+  const toggle = document.querySelector('.menu-toggle');
+  const navLinks = document.getElementById('nav-links');
 
-  menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('active');
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
   });
 
-  // Optional: auto-close nav on link click
-  navList.querySelectorAll('a').forEach(link => {
+  // Optional: auto-close menu on link click (mobile UX)
+  navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      navList.classList.remove('active');
+      navLinks.classList.remove('active');
     });
   });
 });
